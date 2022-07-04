@@ -1,0 +1,36 @@
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1a1a1a;
+    width: auto;
+    height: 4rem;
+    color: white;
+}
+
+.name{
+    margin: 4px;
+}
+
+.fm{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    margin: 4px;
+}
+nav h2 {
+    display: inline;
+}
+
+
+
+.icon{
+    transition: 0.5s all;
+    cursor: pointer;
+}
+
+.icon:hover{
+    transform: scale(1.2);
+}
+
