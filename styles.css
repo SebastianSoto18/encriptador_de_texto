@@ -56,3 +56,63 @@ nav h2 {
     transform: scale(1.2);
 }
 
+
+main{
+    font-family: 'IBM Plex Mono', monospace;
+    background-color: black;
+    text-align: center;
+    font-size: 35px;
+    width: auto;
+}
+
+main h1{
+    color: white;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+    width: auto;
+    height: 640px;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+
+
+.encriptar{
+    width: auto;
+}
+
+.encriptar input{
+    width: 200px;
+    height: 200px;
+}
+
+.desencriptar{
+    width: auto;
+}
+
+.desencriptar input{
+    width: 200px;
+    height: 200px;
+}
+
+@media screen and (max-width: 750px){
+    main{
+    font-size:19px;
+    }
+    header{  
+    font-size:15px;
+    }
+    .desencriptar input{
+        width: 200px;
+        height: 200px;
+    }
+    .encriptar input{
+        width: 200px;
+        height: 200px;
+    }
+}
