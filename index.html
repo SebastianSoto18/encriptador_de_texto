@@ -15,6 +15,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <title>Encriptador de texto</title>
 </head>
 <body>
@@ -42,16 +43,20 @@
                <textarea name="" id="mensajencriptar" cols="30" rows="10" placeholder="Escriba aquí el mensaje que vaya a ser encriptado..."></textarea>
                <div class="botones">
                 <a href="#" class="myButton" id="encriptarb">Encriptar</a>
-                <a href="#" class="myButton2">Desencriptar</a>
+                <a href="#" class="myButton2" id="desencriptarb">Desencriptar</a>
                </div>
             </div>
             <div class="desencriptar">
                <textarea disabled name="" id="areadesencriptar" cols="30" rows="10">
                </textarea>
+               <img id="bannerNoEncriptado" src="img/Aun no haz encriptado algo, ¡animate a hacerlo!.gif" alt="imagen mostrada cuando no se ha encriptado algun texto">
                 <a href="#" class="myButton3" id="copiarb">Copiar</a>            
             </div>
         </div>
     </main>
+
     
+    <script src="js/prepini.js"></script>
+    <script src="js/encriptar.js"></script>
 </body>
 </html>
