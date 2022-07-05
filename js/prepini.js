@@ -1,4 +1,4 @@
 $(document).ready(function(){
-    // hide the img
+    // ocultamos el campo del mensaje encriptado hasta que se encripte algo 
     $("#areadesencriptar").hide();
 });

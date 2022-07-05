@@ -27,8 +27,8 @@ encriptar.addEventListener('click', function (e) {
         
     });
 
-    console.log(texto);
-
+    
+    
 });
 
 //devuelve la posicion de la vocal en el array de keys

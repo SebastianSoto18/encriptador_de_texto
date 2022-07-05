@@ -75,9 +75,13 @@ main{
 
 main h1{
     color: white;
+    font-family: 'IBM Plex Mono', monospace;
+
     margin-top:30px;
 
 }
+
+
 
 .container{
     display: flex;
@@ -234,4 +238,13 @@ main h1{
 
 }
 
+@media screen and (max-width: 2000px){
+    #bannerNoEncriptado{
+        margin-top: 40px;
+    }
+}
+
 /* fin del css de la zona principal */
+
+
+
