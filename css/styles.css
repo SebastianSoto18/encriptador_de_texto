@@ -211,6 +211,11 @@ main h1{
 	top:1px;
 }
 
+#bannerNoEncriptado{
+    width: 70%;
+    height: 23rem;
+}
+
 @media screen and (max-width: 750px){
     main{
     font-size:19px;
