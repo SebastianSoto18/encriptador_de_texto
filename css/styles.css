@@ -2,7 +2,6 @@ body{
     background-color: black;
 }
 
-
 /* inicio del css del header*/
 nav{
     display: flex;
@@ -61,7 +60,10 @@ nav h2 {
     transform: scale(1.2);
 }
 
+/*fin css del header */
 
+
+/* comienzo del css de la zona principal    */
 main{
     font-family: 'IBM Plex Mono', monospace;
 
@@ -226,3 +228,5 @@ main h1{
     }
 
 }
+
+/* fin del css de la zona principal */
