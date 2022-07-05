@@ -125,6 +125,8 @@ main h1{
     background-color: white;
     opacity: 0.7;
     font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .botones{
@@ -220,7 +222,7 @@ main h1{
     height: 23rem;
 }
 
-@media screen and (max-width: 750px){
+@media screen and (max-width: 780px){
     main{
     font-size:19px;
     }
@@ -233,6 +235,7 @@ main h1{
     }
 
     #areadesencriptar{
+  
         width: 100%;
     }
 
@@ -241,6 +244,10 @@ main h1{
 @media screen and (max-width: 2000px){
     #bannerNoEncriptado{
         margin-top: 40px;
+    }
+
+    #areadesencriptar{
+        margin-top:20px;
     }
 }
 
