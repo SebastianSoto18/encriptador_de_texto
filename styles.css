@@ -89,9 +89,11 @@ main h1{
 
 .encriptar{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     margin: 0 auto;
     align-items: center;
+    justify-content: center;
 }
 
 #mensajencriptar{
@@ -109,7 +111,7 @@ main h1{
 }
 
 #areadesencriptar{
-    width: 70%;
+    width: 90%;
     height: 20rem;
     border-radius: 10px;
     opacity: 0.7;
@@ -117,38 +119,42 @@ main h1{
 
 .botones{
     display: flex;
-    margin: 0 auto;
+    margin: 10px auto;
     flex-wrap: wrap;
+    align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap:20px;
 }
 
 .myButton {
-	box-shadow: 0px 10px 14px -7px #3e7327;
-	background:linear-gradient(to bottom, #77b55a 5%, #72b352 100%);
-	background-color:#77b55a;
+	box-shadow: 0px 10px 14px -7px #3dc21b;
+	background:linear-gradient(to bottom, #44c767 5%, #5cbf2a 100%);
+	background-color:#44c767;
 	border-radius:4px;
-	border:1px solid #4b8f29;
+	border:1px solid #18ab29;
 	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;
 	font-family:Arial;
 	font-size:12px;
 	font-weight:bold;
-	padding:11px 35px;
+	padding:16px 52px;
 	text-decoration:none;
-	text-shadow:0px 1px 0px #5b8a3c;
-    margin-top: 15px;
-    width: 30%;
+	text-shadow:0px 1px 0px #2f6627;
 }
 .myButton:hover {
-	background:linear-gradient(to bottom, #72b352 5%, #77b55a 100%);
-	background-color:#72b352;
+	background:linear-gradient(to bottom, #5cbf2a 5%, #44c767 100%);
+	background-color:#5cbf2a;
 }
 .myButton:active {
 	position:relative;
 	top:1px;
 }
+
+#copiarb{
+    margin: 10px auto;
+}
+
 
 .myButton2 {
 	box-shadow: 0px 10px 14px -7px #9fb4f2;
@@ -162,10 +168,9 @@ main h1{
 	font-family:Arial;
 	font-size:12px;
 	font-weight:bold;
-	padding:11px 35px;
+	padding:16px 52px;
 	text-decoration:none;
 	text-shadow:0px 1px 0px #283966;
-    margin-top: 15px;
 }
 .myButton2:hover {
 	background:linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
@@ -176,6 +181,30 @@ main h1{
 	top:1px;
 }
 
+.myButton3 {
+	box-shadow: 0px 10px 14px -7px #e67a73;
+	background:linear-gradient(to bottom, #e4685d 5%, #eb675e 100%);
+	background-color:#e4685d;
+	border-radius:4px;
+	border:1px solid #e4685d;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:12px;
+	font-weight:bold;
+	padding:16px 52px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #b23e35;
+}
+.myButton3:hover {
+	background:linear-gradient(to bottom, #eb675e 5%, #e4685d 100%);
+	background-color:#eb675e;
+}
+.myButton3:active {
+	position:relative;
+	top:1px;
+}
 
 @media screen and (max-width: 750px){
     main{
@@ -184,12 +213,12 @@ main h1{
     header{  
     font-size:15px;
     }
-    .desencriptar input{
-        width: 200px;
-        height: 200px;
+
+    .desencriptar{
+        margin-top: 40px;
     }
-    .encriptar input{
-        width: 200px;
-        height: 200px;
+
+    #areadesencriptar{
+
     }
 }
