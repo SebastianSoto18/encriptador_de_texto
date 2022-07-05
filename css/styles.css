@@ -74,9 +74,13 @@ main{
 
 main h1{
     color: white;
+    font-family: 'IBM Plex Mono', monospace;
+
     margin-top:30px;
 
 }
+
+
 
 .container{
     display: flex;
@@ -120,6 +124,8 @@ main h1{
     background-color: white;
     opacity: 0.7;
     font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .botones{
@@ -215,7 +221,12 @@ main h1{
 	top:1px;
 }
 
-@media screen and (max-width: 750px){
+#bannerNoEncriptado{
+    width: 70%;
+    height: 23rem;
+}
+
+@media screen and (max-width: 780px){
     main{
     font-size:19px;
     }
@@ -228,8 +239,22 @@ main h1{
     }
 
     #areadesencriptar{
+  
         width: 100%;
     }
 }
 
+@media screen and (max-width: 2000px){
+    #bannerNoEncriptado{
+        margin-top: 40px;
+    }
+
+    #areadesencriptar{
+        margin-top:20px;
+    }
+}
+
 /* fin del css de la zona principal */
+
+
+
