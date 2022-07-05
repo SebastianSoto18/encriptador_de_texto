@@ -10,10 +10,11 @@ desencriptar.addEventListener('click', function (e) {
 
     var campodesencriptado = document.querySelector('#areadesencriptar');
     
-    if(campodesencriptado.value != ""){
-        campodesencriptado.value = encriptartexto(campodesencriptado.value,bandera);
+    if(campodesencriptado.style.display == "none"){
+       alert("es necesario que encriptes un texto para poder desencriptarlo");
     }else{
-        alert("es necesario que encriptes un texto para poder desencriptarlo");
+        console.log(campodesencriptado.style.display);
+        campodesencriptado.value = encriptartexto(campodesencriptado.value,bandera);
     }
 
 });
