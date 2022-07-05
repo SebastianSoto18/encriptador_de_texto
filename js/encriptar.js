@@ -52,27 +52,36 @@ function encriptartexto(texto,bandera) {
 
         //almacenara el mensaje final
         var textoencriptado="";
+
+        //se recorre letra por letra 
         texto.forEach(function(letra,indice) {
-        
+            
+            //se pregunta si la letra se encuentra en el array de llaves 
             if(encontrarindice(letra,keys)!= -1) {
                
+                //se pregunta el modo de encriptacion true=encriptar , false=desencriptar
                 if(bandera){
+                    //asigna el endice de la kye a su respectivo valor y transforma la letra actual 
                     var transform = values[encontrarindice(letra,keys)];
                 }else{
 
                 }
                 
+                //se cambia en el arreglo principal la vocal transformada
                 texto[indice]=transform;
             }
-        
+
+            //se almacena el texto con o sin cambios
             textoencriptado+=texto[indice];
     });
 
     }else{
+        //mensaje de error si el usuario activa el boton sin haber escrito nada
         alert("por favor, ingresa texto en el campo para porder encriptarlo");
         return null;
     }
 
+    //retorno del texto encriptado
     return textoencriptado;
 }
 
