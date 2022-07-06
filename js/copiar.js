@@ -18,7 +18,7 @@ copiar.addEventListener('click', function(e) {
     }else{
 
         //se obtiene el texto dentro del texarea
-        var content = campodesencriptado.innerHTML;
+        var content = campodesencriptado.value;
 
         //se llama a la API de clipboard ( guardada en el objeto navigator)
         // y se ejecuta una promesa, si resulta correcta la llamada pasa a then, sino a catch
