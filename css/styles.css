@@ -1,0 +1,263 @@
+body{
+    background-color: black;
+}
+
+/* inicio del css del header*/
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1a1a1a;
+    width: auto;
+    height: 8rem;
+    color: white;
+    font-size: larger;
+}
+
+.verde{
+    color:#1beb9e;
+    font-style: italic;
+}
+
+.azul{
+    color:#18b6ff;
+}
+
+.morado{
+    color:#b462ff;
+}
+
+
+.name{
+    font-family: 'IBM Plex Mono', monospace;
+    margin: 8px;
+}
+
+nav h2 {
+    font-family: 'IBM Plex Mono', monospace;
+    display: inline;
+}
+
+.fm{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    margin: 8px;
+}
+
+.fm img{
+    width: 24px;
+    height: 24px;
+}
+
+.icon{
+    transition: 0.5s all;
+    cursor: pointer;
+}
+
+.icon:hover{
+    transform: scale(1.2);
+}
+
+/*fin css del header */
+
+
+/* comienzo del css de la zona principal    */
+main{
+    font-family: 'IBM Plex Mono', monospace;
+    text-align: center;
+    font-size: 35px;
+    width: auto;
+    height: 100%;
+}
+
+main h1{
+    color: white;
+    font-family: 'IBM Plex Mono', monospace;
+
+    margin-top:30px;
+
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.encriptar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+}
+
+#mensajencriptar{
+    width: 90%;
+    height: 35rem;
+    opacity: 0.7;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+::placeholder { font-style: italic;}
+
+.desencriptar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#areadesencriptar{
+    width: 90%;
+    height: 35rem;
+    border-radius: 10px;
+    background-color: white;
+    opacity: 0.7;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.botones{
+    display: flex;
+    margin: 10px auto;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+}
+
+.myButton {
+	box-shadow: 0px 10px 14px -7px #3dc21b;
+	background:linear-gradient(to bottom, #44c767 5%, #5cbf2a 100%);
+	background-color:#44c767;
+	border-radius:4px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+    font-family: 'IBM Plex Mono', monospace;
+	font-size:15px;
+	font-weight:bold;
+	padding:16px 62px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+
+}
+
+.myButton:hover {
+	background:linear-gradient(to bottom, #5cbf2a 5%, #44c767 100%);
+	background-color:#5cbf2a;
+}
+
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+.myButton2 {
+	box-shadow: 0px 10px 14px -7px #9fb4f2;
+	background:linear-gradient(to bottom, #7892c2 5%, #476e9e 100%);
+	background-color:#7892c2;
+	border-radius:4px;
+	border:1px solid #4e6096;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+    font-family: 'IBM Plex Mono', monospace;
+	font-size:15px;
+	font-weight:bold;
+	padding:16px 52px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #283966;
+    
+}
+
+.myButton2:hover {
+	background:linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
+	background-color:#476e9e;
+}
+
+.myButton2:active {
+	position:relative;
+	top:1px;
+}
+
+.myButton3 {
+	box-shadow: 0px 10px 14px -7px #e67a73;
+	background:linear-gradient(to bottom, #e4685d 5%, #eb675e 100%);
+	background-color:#e4685d;
+	border-radius:4px;
+	border:1px solid #e4685d;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+    font-family: 'IBM Plex Mono', monospace;
+	font-size:15px;
+	font-weight:bold;
+	padding:16px 52px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #b23e35;
+    margin: 10px auto;
+}
+
+.myButton3:hover {
+	background:linear-gradient(to bottom, #eb675e 5%, #e4685d 100%);
+	background-color:#eb675e;
+}
+
+.myButton3:active {
+	position:relative;
+	top:1px;
+}
+
+#bannerNoEncriptado{
+    width: 70%;
+    height: 23rem;
+}
+
+@media screen and (max-width: 780px){
+    main{
+    font-size:19px;
+    }
+    header{  
+    font-size:15px;
+    }
+
+    .desencriptar{
+        margin-top: 40px;
+    }
+
+    #areadesencriptar{
+        width: 80%;
+    }
+
+    #mensajencriptar{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 1490px){
+    #bannerNoEncriptado{
+        margin-top: 40px;
+    }
+
+    #areadesencriptar{
+        margin-top: 40px;
+    }
+
+}
+
+/* fin del css de la zona principal */
+
+
+
