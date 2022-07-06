@@ -226,11 +226,11 @@ main h1{
     height: 23rem;
 }
 
-@media screen and (max-width: 780px){
+@media screen and (max-width: 740px){
     main{
     font-size:19px;
     }
-    header{  
+    header h1,h2{  
     font-size:15px;
     }
 
