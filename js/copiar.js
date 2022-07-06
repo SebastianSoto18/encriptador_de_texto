@@ -27,6 +27,8 @@ copiar.addEventListener('click', function(e) {
                 //se cambia el texto del boton 
                 copiar.textContent="✔ Copiado en el portapapeles";
 
+                campodesencriptado.select();
+                document.execCommand('copy');
                 //se esperan 2 segundos y se devuelve al texto por default
                 setTimeout(function(){
                     copiar.textContent="Copiar";
