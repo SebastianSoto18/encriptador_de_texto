@@ -93,7 +93,12 @@ function encriptartexto(texto,bandera) {
 
     }else{
         //mensaje de error si el usuario activa el boton sin haber escrito nada
-        alert("por favor, ingresa texto en el campo para porder encriptarlo");
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'por favor, ingresa texto en el campo para porder encriptarlo',
+          })
+
         return null;
     }
     
