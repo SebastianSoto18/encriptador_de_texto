@@ -19,13 +19,13 @@ encriptar.addEventListener('click', function (e) {
    
     //si el usuario no ingreso ningun texto, se acaba el metodo 
     if(encriptartexto(texto,bandera)==null){
-
+        
         return;
 
     }else{
 
          //le asignamos el texto ya encriptado
-        campodesencriptado.textContent = encriptartexto(texto,bandera);
+        campodesencriptado.value = encriptartexto(texto,bandera);
 
           //obtenemos la imagen y la hacemos invisible
         document.querySelector('#bannerNoEncriptado').style.display = 'none';
@@ -66,11 +66,12 @@ function encriptartexto(texto,bandera) {
 
             //se pregunta si la letra se encuentra en el array de llaves 
             if(encontrarindice(letra,keys)!= -1) {
-               
+
                 //se pregunta el modo de encriptacion true=encriptar , false=desencriptar
                 if(bandera){
                     //asigna el endice de la kye a su respectivo valor y transforma la letra actual 
                     transform = values[encontrarindice(letra,keys)];
+                    console.log(transform);
                      //se cambia en el arreglo principal la vocal transformada
                     texto[indice]=transform;
                    
