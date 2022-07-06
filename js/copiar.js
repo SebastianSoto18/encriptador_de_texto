@@ -12,9 +12,11 @@ copiar.addEventListener('click', function(e) {
     
     //si el campo sigue invisible se le notifica al usuario 
     if(campodesencriptado.style.display == "none"){
-
-       alert("es necesario que encriptes un texto para poder copiarlo");
-
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'es necesario que encriptes un texto para poder copiarlo',
+          })
     }else{
 
         //se obtiene el texto dentro del texarea
